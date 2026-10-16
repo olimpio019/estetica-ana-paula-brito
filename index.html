@@ -9,7 +9,7 @@
 <style>
 :root{--bg:#FAF6F1;--alt:#F1E6DC;--surface:#FFFDFA;--ink:#3A2A2C;--muted:#6B5558;--line:#E3D3C6;--rose:#8E4F58;--rose-ink:#fff;--gold:#A98543;--wa:#1E9E50;
 box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
-@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#1D1517;--alt:#261C1F;--surface:#2B2024;--ink:#F6EDE6;--muted:#C4B2AE;--line:#41323A;--rose:#E0A3AB;--rose-ink:#2A1519;--gold:#D4B06A}}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#1D1517;--alt:#261C1F;--surface:#2B2024;--ink:#F6EDE6;--muted:#C4B2AE;--line:#41323A;--rose:#E0A3AB;--rose-ink:#2A1519;--gol[...]
 :root[data-theme="dark"]{--bg:#1D1517;--alt:#261C1F;--surface:#2B2024;--ink:#F6EDE6;--muted:#C4B2AE;--line:#41323A;--rose:#E0A3AB;--rose-ink:#2A1519;--gold:#D4B06A}
 html{scroll-padding-top:84px;scroll-behavior:smooth}
 *,*::before,*::after{box-sizing:inherit}
@@ -30,7 +30,7 @@ header .wrap{display:flex;align-items:center;justify-content:space-between;gap:1
 nav{display:flex;align-items:center;gap:26px;font-size:15px}
 nav a:not(.btn){text-decoration:none;color:var(--muted)}nav a:not(.btn):hover{color:var(--ink)}
 @media(max-width:860px){nav a:not(.btn){display:none}}
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;background:var(--rose);color:var(--rose-ink)!important;padding:14px 28px;border-radius:99px;text-decoration:none;font-weight:500;font-size:15.5px;min-height:48px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;background:var(--rose);color:var(--rose-ink)!important;padding:14px 28px;border-radius:99px;text-decoration:none;font-we[...]
 .btn.sm{padding:10px 18px;min-height:44px;font-size:14px}
 .btn.line{background:transparent;border:1px solid var(--gold);color:var(--ink)!important}
 .btn svg{width:19px;height:19px;fill:currentColor}
@@ -68,8 +68,8 @@ nav a:not(.btn){text-decoration:none;color:var(--muted)}nav a:not(.btn):hover{co
 .box dt{font-size:12.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--gold)}
 .box dd{margin:0 0 12px;font-size:19px}
 footer{padding:40px 0 112px;text-align:center;color:var(--muted);font-size:14.5px}
-footer b{display:block;font:italic 500 24px "Cormorant Garamond",serif;color:var(--ink)}
-.fab{position:fixed;right:max(18px,env(safe-area-inset-right,0px));bottom:calc(18px + env(safe-area-inset-bottom,0px));width:60px;height:60px;border-radius:50%;background:#25D366;display:grid;place-items:center;box-shadow:0 8px 22px rgba(0,0,0,.25);z-index:40}
+<footer b{display:block;font:italic 500 24px "Cormorant Garamond",serif;color:var(--ink)}
+.fab{position:fixed;right:max(18px,env(safe-area-inset-right,0px));bottom:calc(18px + env(safe-area-inset-bottom,0px));width:60px;height:60px;border-radius:50%;background:#25D366;display:grid;plac[...]
 .fab svg{width:34px;height:34px;fill:#fff}
 .js .rv{opacity:0;transform:translateY(18px);transition:opacity .9s ease,transform .9s ease}
 .js .rv.in{opacity:1;transform:none}
@@ -78,15 +78,15 @@ footer b{display:block;font:italic 500 24px "Cormorant Garamond",serif;color:var
 </head>
 <body>
 <svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
-<symbol id="wa" viewBox="0 0 24 24"><path d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.16-.17.2-.35.22-.64.07-.3-.15-1.26-.46-2.39-1.47-.88-.79-1.48-1.76-1.65-2.06-.17-.3-.02-.46.13-.6.13-.14.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.61-.92-2.2-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.88 1.21 3.07c.15.2 2.1 3.2 5.08 4.49.71.3 1.26.49 1.69.62.71.23 1.36.2 1.87.12.57-.09 1.76-.72 2-1.41.25-.7.25-1.29.17-1.41-.07-.12-.27-.2-.57-.35m-5.42 7.4h-.01a9.87 9.87 0 0 1-5.03-1.38l-.36-.21-3.74.98 1-3.65-.24-.37a9.86 9.86 0 0 1-1.51-5.26c0-5.45 4.44-9.88 9.89-9.88 2.64 0 5.12 1.03 6.99 2.9a9.82 9.82 0 0 1 2.89 6.99c0 5.45-4.44 9.88-9.88 9.88M20.46 3.49A11.82 11.82 0 0 0 12.05 0C5.5 0 .16 5.34.16 11.89c0 2.1.55 4.14 1.59 5.95L.06 24l6.3-1.65a11.88 11.88 0 0 0 5.68 1.45h.01c6.55 0 11.89-5.34 11.89-11.89 0-3.18-1.24-6.17-3.48-8.42"/></symbol>
-<symbol id="sprig" viewBox="0 0 100 200"><path d="M50 195C50 125 55 70 50 15M50 150c-25-5-35-25-35-40 25 3 35 20 35 40Zm0-40c25-5 35-25 35-40-25 3-35 20-35 40Zm0-40c-20-4-28-20-28-32 20 2 28 16 28 32Z"/></symbol>
+<symbol id="wa" viewBox="0 0 24 24"><path d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.16-.17.2-.35.22-.64.07-.3-.15-1.26-.46-2.39-1.47-.88-.79-1.48-1.76-1.65-[...]
+<symbol id="sprig" viewBox="0 0 100 200"><path d="M50 195C50 125 55 70 50 15M50 150c-25-5-35-25-35-40 25 3 35 20 35 40Zm0-40c25-5 35-25 35-40-25 3-35 20-35 40Zm0-40c-20-4-28-20-28-32 20 2 28 16 28[...]
 <symbol id="stones" viewBox="0 0 100 200"><ellipse cx="50" cy="150" rx="40" ry="14"/><ellipse cx="50" cy="122" rx="30" ry="11"/><ellipse cx="50" cy="98" rx="20" ry="8"/></symbol>
 <symbol id="lotus" viewBox="0 0 100 200"><path d="M50 150C30 130 30 100 50 80c20 20 20 50 0 70Zm-5 3C20 150 8 125 12 105c20 5 33 25 33 48Zm10 0c25-3 37-28 33-48-20 5-33 25-33 48Z"/></symbol>
 <symbol id="candle" viewBox="0 0 100 200"><rect x="36" y="105" width="28" height="60" rx="5"/><path d="M50 68c9 11 9 20 0 27-9-7-9-16 0-27Z"/></symbol>
 </defs></svg>
 
 <header><div class="wrap">
-<a class="logo" href="#"><b>Ana Paula Brito</b><small>Estética</small></a>
+<a class="logo" href="#"><b>sua empresa aqui</b><small></small></a>
 <nav><a href="#espaco">O espaço</a><a href="#servicos">Serviços</a><a href="#galeria">Galeria</a><a href="#contato">Contato</a>
 <a class="btn sm" data-wa href="#" target="_blank" rel="noopener"><svg><use href="#wa"/></svg>Fale pelo WhatsApp</a></nav>
 </div></header>
@@ -96,7 +96,7 @@ footer b{display:block;font:italic 500 24px "Cormorant Garamond",serif;color:var
 <div class="rv">
 <span class="eyebrow">Piracicaba · SP</span>
 <h1>Um momento de cuidado dedicado a você.</h1>
-<p>Conheça a Estética Ana Paula Brito, em Piracicaba, e converse sobre os cuidados que fazem sentido para você.</p>
+<p>Conheça a sua empresa aqui, em Piracicaba, e converse sobre os cuidados que fazem sentido para você.</p>
 <a class="btn" data-wa href="#" target="_blank" rel="noopener">Consultar disponibilidade</a>
 </div>
 <div class="art rv" role="img" aria-label="Ilustração de ramo delicado em tons de rosé">
@@ -136,12 +136,12 @@ footer b{display:block;font:italic 500 24px "Cormorant Garamond",serif;color:var
 <section id="contato" class="contact"><div class="wrap"><div class="box rv">
 <span class="eyebrow">Contato</span>
 <h2>Vamos conversar?</h2>
-<dl><dt>Cidade</dt><dd>Piracicaba/SP</dd><dt>WhatsApp</dt><dd>19 00000-0000</dd><dt>Endereço e horários</dt><dd style="font-size:16px;color:var(--muted);font-style:italic">A confirmar com a empresa</dd></dl>
+<dl><dt>Cidade</dt><dd>Piracicaba/SP</dd><dt>WhatsApp</dt><dd>19 00000-0000</dd><dt>Endereço e horários</dt><dd style="font-size:16px;color:var(--muted);font-style:italic">A confirmar com a empresa<[...]
 <a class="btn" data-wa href="#" target="_blank" rel="noopener"><svg><use href="#wa"/></svg>Conversar sobre um agendamento</a>
 </div></div></section>
 </main>
 
-<footer><div class="wrap"><b>Ana Paula Brito · Estética</b>Modelo demonstrativo desenvolvido pela Equipe Alvorada 3.</div></footer>
+<footer><div class="wrap"><b>sua empresa aqui</b>Modelo demonstrativo desenvolvido pela Equipe Alvorada 3.</div></footer>
 
 <a class="fab" data-wa href="#" target="_blank" rel="noopener" aria-label="Conversar pelo WhatsApp"><svg><use href="#wa"/></svg></a>
 
